@@ -35,7 +35,9 @@ make_plot <- function(csv) {
 
 save_plot <- function(g) {
     filename <- gsub(" ", "_", g$labels$title)
-    ggsave(filename=paste0(filename, '.png'), plot=g, h=7, w=7, dpi=100)
+    ggsave(filename=paste0(filename, '.png'), 
+           plot=g, 
+           h=7, w=7, dpi=100)
 }
 
 generate_plot <- function(csv) {
